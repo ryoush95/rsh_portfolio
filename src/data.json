@@ -1,0 +1,281 @@
+{
+  "navLinks": [
+    {
+      "label": "About me",
+      "target": "#about"
+    },
+    {
+      "label": "Skills",
+      "target": "#skills"
+    },
+    {
+      "label": "Projects",
+      "target": "#projects"
+    },
+    {
+      "label": "Career",
+      "target": "#career"
+    },
+    {
+      "label": "Values",
+      "target": "#values"
+    },
+    {
+      "label": "Together",
+      "target": "#team"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/ryoush95"
+    }
+  ],
+  "profileColumns": [
+    [
+      {
+        "icon": "user",
+        "label": "이름",
+        "value": "유승훈"
+      },
+      {
+        "icon": "github",
+        "label": "github",
+        "value": "https://github.com/ryoush95"
+      }
+    ],
+    [
+      {
+        "icon": "calendar",
+        "label": "생년월일",
+        "value": "1995.09.20"
+      },
+      {
+        "icon": "mail",
+        "label": "이메일",
+        "value": "rshsh2433@gmail.com"
+      }
+    ],
+    [
+      {
+        "icon": "location",
+        "label": "위치",
+        "value": "서울특별시 영등포구"
+      },
+      {
+        "icon": "pencil",
+        "label": "학력",
+        "value": "인하공업전문대학교\n(정보통신학과)"
+      }
+    ]
+  ],
+  "skillCategories": [
+    {
+      "category": "Language",
+      "icon": "code",
+      "tags": [
+        {
+          "label": "Dart",
+          "tone": "teal"
+        },
+        {
+          "label": "Java",
+          "tone": "crimson"
+        },
+        {
+          "label": "Swift",
+          "tone": "tangerine"
+        },
+        {
+          "label": "JavaScript",
+          "tone": "amber"
+        }
+      ]
+    },
+    {
+      "category": "Frontend",
+      "icon": "browser",
+      "tags": [
+        {
+          "label": "Flutter",
+          "tone": "sky"
+        },
+        {
+          "label": "Android",
+          "tone": "leaf"
+        },
+        {
+          "label": "iOS",
+          "tone": "tangerine"
+        },
+        {
+          "label": "React",
+          "tone": "ink"
+        }
+      ]
+    },
+    {
+      "category": "Backend",
+      "icon": "database",
+      "tags": [
+        {
+          "label": "AWS",
+          "tone": "tangerine"
+        },
+        {
+          "label": "Firebase",
+          "tone": "sunset"
+        },
+        {
+          "label": "MySQL",
+          "tone": "indigo"
+        },
+        {
+          "label": "PHP",
+          "tone": "plum"
+        }
+      ]
+    },
+    {
+      "category": "etc",
+      "icon": "cloud",
+      "tags": [
+        {
+          "label": "Notion",
+          "tone": "cobalt"
+        },
+        {
+          "label": "Figma",
+          "tone": "ink"
+        },
+        {
+          "label": "Github",
+          "tone": "indigo"
+        },
+        {
+          "label": "Slack",
+          "tone": "brick"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "아이겟",
+      "period": "2023.06 - 2023.10 · 엔터크라우드",
+      "summary": "뮤지컬 공동구매와 커뮤니티 기능을 제공하는 모바일 앱",
+      "bullets": [
+        "Flutter 기반 프론트엔드 전면 개발과 앱스토어 배포·운영",
+        "경매·비지정석·예매 흐름 및 결제 연동 구현",
+        "전반적인 오류 대응과 성능 최적화로 사용성 개선"
+      ],
+      "url": "https://www.notion.so/e876a1b0ea6c48f0a1b0ebf0a157041d?pvs=21",
+      "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, AWS, Docker, Kubernetes"
+    },
+    {
+      "name": "우아닥터",
+      "period": "2022.08 - 2023.04 · 밍글링",
+      "summary": "병원과 보호자를 연결하는 실시간 상담·모니터링 앱",
+      "bullets": [
+        "앱 리뉴얼과 주요 기능 개선, 스토어 배포 담당",
+        "Flutter UI/UX 재설계로 사용자 경험 개선 및 크래시율 97% 감소",
+        "서포터즈 피드백 기반 오류 모니터링과 지속적인 패치"
+      ],
+      "url": "https://www.notion.so/844516ec9c1c4cc0a6aac1631cb99a0b?pvs=21",
+      "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, PHP"
+    },
+    {
+      "name": "데카펫",
+      "period": "2022.09 - 2023.03 · 밍글링",
+      "summary": "채혈 결과 조회와 병원 찾기, 커뮤니티 기능을 제공하는 펫 헬스케어 앱",
+      "bullets": [
+        "기존 기능 개선과 신규 API 연동, 앱스토어 배포",
+        "전화번호 인증 도입으로 중복 가입 방지",
+        "채혈 기기 데이터와 실시간 연동"
+      ],
+      "url": "https://www.notion.so/e876a1b0ea6c48f0a1b0ebf0a157041d?pvs=21",
+      "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, PHP"
+    },
+    {
+      "name": "키고",
+      "period": "2022.05 - 2023.08 · 소금",
+      "summary": "광고업체와 고객을 매칭하고 실시간 상담이 가능한 하이브리드 앱",
+      "bullets": [
+        "Flutter 하이브리드 앱 신규 개발과 배포",
+        "웹 연동 Firebase 알림 구축 및 오류 대응",
+        "실시간 푸시 알림 안정화"
+      ],
+      "url": "https://www.notion.so/a3aed098797a456fa35db390f8e374ed?pvs=21",
+      "stack": "Flutter, Firebase Push Notification, MySQL"
+    },
+    {
+      "name": "복대리",
+      "period": "2022.02 - 2022.06 · 소금",
+      "summary": "변호사와 고객을 연결하고 재판 현황을 공유하는 앱",
+      "bullets": [
+        "Flutter 프론트엔드 개발과 Firebase 알림 구축",
+        "푸시 알림 다중 발송 실패 문제 해결, 도착 시간 50% 단축",
+        "카테고리별 푸시 구독 서비스 구현"
+      ],
+      "url": "https://www.notion.so/ba6ca924c9464c1e8b146847837f6893?pvs=21",
+      "stack": "Flutter, Firebase Push Notification, MySQL"
+    },
+    {
+      "name": "치매북스",
+      "period": "2022.01 - 2023.02 · 소금",
+      "summary": "치매 예방 콘텐츠를 제공하는 공공 하이브리드 앱",
+      "bullets": [
+        "Flutter 기반 하이브리드 앱 개발 및 배포",
+        "웹 뷰어와의 레이아웃 차이로 발생한 호환성 이슈 해결",
+        "치매 관련 자료 열람 경험 최적화"
+      ],
+      "url": "https://www.notion.so/cc8a49e7e2854683a1eaf9294ae9bf47?pvs=21",
+      "stack": "Flutter, Firebase Push Notification, MySQL"
+    }
+  ],
+  "career": [
+    {
+      "company": "엔터크라우드",
+      "period": "2023.06 - 2023.10",
+      "tagline": "뮤지컬 공동구매 앱 아이겟을 개발 및 운영",
+      "details": [
+        "Flutter 프론트엔드 개발 및 앱스토어 배포 관리",
+        "경매·예매 기능, 결제 연동, 성능 개선 주도"
+      ],
+      "highlights": [
+        "앱 전반 오류 해결과 속도 개선으로 사용자 만족도 향상",
+        "AWS·Docker·Kubernetes 기반 인프라 운영 경험 축적"
+      ]
+    },
+    {
+      "company": "밍글링",
+      "period": "2022.08 - 2023.04",
+      "tagline": "우아닥터·데카펫 등 의료·펫케어 앱 리뉴얼",
+      "details": [
+        "Flutter 앱 리뉴얼 및 신규 기능 개발",
+        "PHP로 간단한 API 개발 및 배포"
+      ],
+      "highlights": [
+        "우아닥터 리뉴얼로 크래시율 97% 감소",
+        "전화번호 인증과 기기 연동을 통한 데이터 신뢰도 확보"
+      ]
+    },
+    {
+      "company": "소금",
+      "period": "2022.01 - 2023.08",
+      "tagline": "광고·법률·공공 서비스 하이브리드 앱 다수 개발",
+      "details": [
+        "Flutter 하이브리드 앱 신규 개발 및 유지보수",
+        "Firebase Push 기반 실시간 알림 설계"
+      ],
+      "highlights": [
+        "키고, 복대리, 치매북스 등 다양한 도메인 앱 개발",
+        "푸시 알림 안정화와 구독 기능 구현으로 고객 반복 이용률 향상"
+      ]
+    }
+  ],
+  "philosophy": [
+    "사용자가 즉시 체감할 수 있는 모바일 경험을 빠르게 전달합니다."
+  ],
+  "idealTeam": [
+    "모바일 제품 임팩트에 집중하며 빠르게 실험하는 팀"
+  ]
+}
