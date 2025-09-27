@@ -17,14 +17,6 @@
       "target": "#career"
     },
     {
-      "label": "Values",
-      "target": "#values"
-    },
-    {
-      "label": "Together",
-      "target": "#team"
-    },
-    {
       "label": "GitHub",
       "href": "https://github.com/ryoush95"
     }
@@ -159,6 +151,23 @@
   ],
   "projects": [
     {
+      "name": "일과사람",
+      "period": "2023.11 - 현재 · 넷스프린트",
+      "summary": "건설현장과 자영업자를 위한 현장 모니터링·지출·장비·근태를 통합 제공하는 모바일 애플리케이션",
+      "bullets": [
+        "iOS/Android 앱스토어 배포 및 운영 전반 관리",
+        "Flutter 3.x + GetX 기반 유지보수와 주요 기능 고도화",
+        "근태·계약·회원 관리 업무를 모바일 환경으로 이전하여 관리자와 근로자의 부담 최소화",
+        "안면인식 기반 출퇴근 기능을 AWS 서비스로 구현하여 현장 근로자 관리 효율 향상",
+        "주민등록증·운전면허증 OCR 자동화를 통해 사용자 인증 절차 단축",
+        "부트페이 결제 및 세금영수증 발행을 연동해 비용 처리 간소화",
+        "구인·구직 서비스를 도입해 플랫폼 커뮤니티 확장"
+      ],
+      "url": "https://windy-apricot-5b1.notion.site/dd635c24f1774129a31766d8833611b3",
+      "stack": "Flutter 3.x, GetX, Firebase Analytics, Firebase Push Notification, Sentry, MySQL, AWS, NestJS",
+      "linkLabel": "링크"
+    },
+    {
       "name": "아이겟",
       "period": "2023.06 - 2023.10 · 엔터크라우드",
       "summary": "뮤지컬 공동구매와 커뮤니티 기능을 제공하는 모바일 앱",
@@ -168,7 +177,8 @@
         "전반적인 오류 대응과 성능 최적화로 사용성 개선"
       ],
       "url": "https://www.notion.so/e876a1b0ea6c48f0a1b0ebf0a157041d?pvs=21",
-      "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, AWS, Docker, Kubernetes"
+      "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, AWS, Docker, Kubernetes",
+      "linkLabel": "링크"
     },
     {
       "name": "우아닥터",
@@ -180,7 +190,8 @@
         "서포터즈 피드백 기반 오류 모니터링과 지속적인 패치"
       ],
       "url": "https://www.notion.so/844516ec9c1c4cc0a6aac1631cb99a0b?pvs=21",
-      "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, PHP"
+      "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, PHP",
+      "linkLabel": "링크"
     },
     {
       "name": "데카펫",
@@ -192,7 +203,8 @@
         "채혈 기기 데이터와 실시간 연동"
       ],
       "url": "https://www.notion.so/e876a1b0ea6c48f0a1b0ebf0a157041d?pvs=21",
-      "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, PHP"
+      "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, PHP",
+      "linkLabel": "링크"
     },
     {
       "name": "키고",
@@ -204,7 +216,8 @@
         "실시간 푸시 알림 안정화"
       ],
       "url": "https://www.notion.so/a3aed098797a456fa35db390f8e374ed?pvs=21",
-      "stack": "Flutter, Firebase Push Notification, MySQL"
+      "stack": "Flutter, Firebase Push Notification, MySQL",
+      "linkLabel": "링크"
     },
     {
       "name": "복대리",
@@ -216,7 +229,8 @@
         "카테고리별 푸시 구독 서비스 구현"
       ],
       "url": "https://www.notion.so/ba6ca924c9464c1e8b146847837f6893?pvs=21",
-      "stack": "Flutter, Firebase Push Notification, MySQL"
+      "stack": "Flutter, Firebase Push Notification, MySQL",
+      "linkLabel": "링크"
     },
     {
       "name": "치매북스",
@@ -228,10 +242,25 @@
         "치매 관련 자료 열람 경험 최적화"
       ],
       "url": "https://www.notion.so/cc8a49e7e2854683a1eaf9294ae9bf47?pvs=21",
-      "stack": "Flutter, Firebase Push Notification, MySQL"
+      "stack": "Flutter, Firebase Push Notification, MySQL",
+      "linkLabel": "링크"
     }
   ],
   "career": [
+    {
+      "company": "넷스프린트",
+      "period": "2025.09 - 현재",
+      "tagline": "일과사람 앱 개발 및 운영",
+      "details": [
+        "Flutter 프론트엔드 개발 및 앱스토어 배포 관리",
+        "데이터 베이스"
+      ],
+      "highlights": [
+        "얼굴인증 출퇴근 기능 AWS 서비스 구현",
+        "주민등록증·운전면허증 OCR 자동화를 통해 사용자 인증 절차 단축",
+        "부트페이 결제 및 세금영수증 발행을 연동해 비용 처리 간소화"
+      ]
+    },
     {
       "company": "엔터크라우드",
       "period": "2023.06 - 2023.10",
@@ -241,8 +270,7 @@
         "경매·예매 기능, 결제 연동, 성능 개선 주도"
       ],
       "highlights": [
-        "앱 전반 오류 해결과 속도 개선으로 사용자 만족도 향상",
-        "AWS·Docker·Kubernetes 기반 인프라 운영 경험 축적"
+        "앱 전반 오류 해결과 속도 개선으로 사용자 만족도 향상"
       ]
     },
     {

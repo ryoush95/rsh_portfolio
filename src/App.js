@@ -2,86 +2,13 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import data from './data.json';
 
-const navLinks = data.navLinks;
-
-const profileColumns = data.profileColumns;
-/* moved to data.json
-const profileColumns = [
-  [
-    { icon: 'user', label: '이름', value: '유승훈' },
-    { icon: 'github', label: 'github', value: 'https://github.com/ryoush95' },
-  ],
-  [
-    { icon: 'calendar', label: '생년월일', value: '1995.09.20' },
-    { icon: 'mail', label: '이메일', value: 'rshsh2433@gmail.com' },
-  ],
-  [
-    { icon: 'location', label: '위치', value: '서울특별시 영등포구' },
-    { icon: 'pencil', label: '학력', value: '인하공업전문대학교\n(정보통신학과)' },
-  ],
-];
-*/
-
-const skillCategories = data.skillCategories;
-/* moved to data.json
-const skillCategories = [
-  {
-    category: 'Language',
-    icon: 'code',
-    tags: [
-      { label: 'Dart', tone: 'teal' },
-      { label: 'Java', tone: 'crimson' },
-      { label: 'Swift', tone: 'tangerine' },
-      { label: 'JavaScript', tone: 'amber' },
-    ],
-  },
-];
-*/
-
-
-const projects = data.projects;
-/* moved to data.json
-const projects = [
-  {
-    name: 'react-bulk-form',
-    period: '2025.03',
-    summary: 'Form 상태의 일괄 관리를 위한 간단한 React 라이브러리',
-    bullets: [
-      'Form 필드 값과 오류(정적 규칙 기반의 검증 결과)의 일괄 관리',
-      'Form 또는 필드 단위의 상태 추적',
-      'Form 상태에 따른 UX 구현을 배제하여 부가적인 인터페이스 최소화',
-    ],
-    url: 'https://www.npmjs.com/package/react-bulk-form',
-    stack: 'TypeScript, React',
-  },
-];*/
-
-const career = data.career;
-/* moved to data.json
-const career = [
-  {
-    company: '(주) 당근마켓',
-    period: '2024.11 - (재직 중)',
-    tagline: '"이웃과 더 가까워지는 따뜻한 동네를 만들어요"',
-    details: [
-      'Frontend 개발',
-      'Backend 개발',
-      '비즈프로필 기반의 당근 3탭 서비스 개발',
-    ],
-    highlights: [
-      '2025년 상반기 (진행 중) - 당근 3탭(동네지도)의 유입 확보를 위한 비즈프로필 기반의 서비스 개발 (Frontend, Backend)',
-      '비즈프로필 웹뷰의 플랫폼 개발',
-      '2024년 상반기 - 비즈프로필 웹뷰의 생산성·안정성·성능을 개선하기 위한 플랫폼 개발 (Frontend)',
-      '지역 동네 업체 정보(비즈프로필) 관련 기능 개발',
-      '2024년 하반기 - 이웃의 사장님들과 고객님들을 연결하기 위한 비즈프로필 기능 개발 (Frontend)',
-    ],
-  },
-];
-*/
-
-const philosophy = data.philosophy;
-
-const idealTeam = data.idealTeam;
+const {
+  navLinks,
+  profileColumns,
+  skillCategories,
+  projects,
+  career
+} = data;
 
 const ICONS = {
   link: () => (
@@ -386,13 +313,12 @@ function App() {
               link.href ? (
                 <a
                   key={link.label}
-                  className="site-nav-link site-nav-link--icon"
+                  className="site-nav-link"
                   href={link.href}
                   target="_blank"
                   rel="noreferrer"
-                  aria-label={link.label}
                 >
-                  <Icon name="github" />
+                  {link.label}
                 </a>
               ) : (
                 <button
@@ -413,7 +339,7 @@ function App() {
           <p className="hero-eyebrow">유승훈&apos;s Portfolio</p>
           <h1 className="hero-title">Mobile App Developer 유승훈</h1>
           <p className="hero-subtitle">
-            최신 기술을 빠르게 흡수해 사용자 경험과 비즈니스 가치를 동시에 끌어올리는 데 집중하고 있습니다.
+            최신 기술을 빠르게 흡수해 사용자 경험과 가치를 동시에 끌어올리는 데 집중하고 있습니다.
           </p>
         </div>
       </header>
@@ -477,7 +403,7 @@ function App() {
         <section className="section" id="projects">
           <div className="container">
             <SectionBanner title="PROJECTS" variant="projects" />
-            <p className="section-lead">성과와 학습이 동시에 드러나는 프로젝트들을 선별했습니다.</p>
+            <p className="section-lead">지금까지 개발한 대표 프로젝트들을 선별했습니다.</p>
             <div className="projects-grid">
               {projects.map((project) => (
                 <article className="project-card" key={project.name}>
@@ -493,7 +419,7 @@ function App() {
                   </ul>
                   {project.url ? (
                     <a className="project-link" href={project.url} target="_blank" rel="noreferrer">
-                      {project.url}
+                      {project.linkLabel || '링크'}
                     </a>
                   ) : null}
                   <p className="project-stack">{project.stack}</p>
@@ -506,7 +432,7 @@ function App() {
         <section className="section" id="career">
           <div className="container">
             <SectionBanner title="CAREER" variant="career" />
-            <p className="section-lead">조직과 제품이 성장하는 방향에 맞춰 역할을 확장해왔습니다.</p>
+            <p className="section-lead">회사와 개발자가 성장하는 방향에 맞춰 역할을 확장해왔습니다.</p>
             <div className="career-list">
               {career.map((job) => (
                 <article className="career-card" key={job.company}>
@@ -534,22 +460,11 @@ function App() {
           </div>
         </section>
 
-        <section className="section" id="values">
-          <div className="container">
-            <SectionBanner title="VALUES" variant="values" />
-            <p className="section-lead"></p>
-            <ul className="values-list">
-              {philosophy.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        </section>
       </main>
 
       <footer className="footer">
         <div className="container">
-          <p className="footer-title">.</p>
+          <p className="footer-title"></p>
           <p className="footer-contact">
             이메일: <a href="mailto:rshsh2433@gmail.com">rshsh2433@gmail.com</a>
           </p>
