@@ -127,7 +127,7 @@
       ]
     },
     {
-      "category": "etc",
+      "category": "Tools",
       "icon": "cloud",
       "tags": [
         {
@@ -145,6 +145,14 @@
         {
           "label": "Slack",
           "tone": "brick"
+        },
+        {
+          "label": "Cursor",
+          "tone": "sky"
+        },
+        {
+          "label": "Codex",
+          "tone": "leaf"
         }
       ]
     }
@@ -269,9 +277,7 @@
         "Flutter 프론트엔드 개발 및 앱스토어 배포 관리",
         "경매·예매 기능, 결제 연동, 성능 개선 주도"
       ],
-      "highlights": [
-        "앱 전반 오류 해결과 속도 개선으로 사용자 만족도 향상"
-      ]
+      "highlights": ["앱 전반 오류 해결과 속도 개선으로 사용자 만족도 향상"]
     },
     {
       "company": "밍글링",
@@ -303,7 +309,5 @@
   "philosophy": [
     "사용자가 즉시 체감할 수 있는 모바일 경험을 빠르게 전달합니다."
   ],
-  "idealTeam": [
-    "모바일 제품 임팩트에 집중하며 빠르게 실험하는 팀"
-  ]
+  "idealTeam": ["모바일 제품 임팩트에 집중하며 빠르게 실험하는 팀"]
 }
