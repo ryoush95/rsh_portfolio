@@ -1,16 +1,19 @@
 import { SectionBanner } from '../common';
+import useFadeIn from '../../hooks/useFadeIn';
 
 /**
  * CareerSection 컴포넌트
  * 경력 정보를 표시하는 섹션
- * 
+ *
  * @param {Object} props
  * @param {Array} props.career - 경력 배열
  * @returns {JSX.Element}
  */
 const CareerSection = ({ career }) => {
+  const { ref, isVisible } = useFadeIn();
+
   return (
-    <section className="section" id="career">
+    <section ref={ref} className={`section fade-in${isVisible ? ' is-visible' : ''}`} id="career">
       <div className="container">
         <SectionBanner title="CAREER" variant="career" />
         <p className="section-lead">회사와 개발자가 성장하는 방향에 맞춰 역할을 확장해왔습니다.</p>

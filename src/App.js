@@ -20,6 +20,13 @@ const { navLinks, profileColumns, skillCategories, projects, career } = data;
  */
 function App() {
   const [isTop, setIsTop] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  // 페이지 로딩 애니메이션
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoaded(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   // 스크롤 위치 감지
   useEffect(() => {
@@ -41,19 +48,29 @@ function App() {
   };
 
   return (
-    <div className="app" id="top">
-      <Header isTop={isTop} navLinks={navLinks} onNavigate={handleNavigate} />
-      <Hero />
+    <>
+      <div className={`app${isLoaded ? ' app--loaded' : ''}`} id="top">
+        <Header isTop={isTop} navLinks={navLinks} onNavigate={handleNavigate} />
+        <Hero />
 
-      <main>
-        <AboutSection profileColumns={profileColumns} />
-        <SkillsSection skillCategories={skillCategories} />
-        <ProjectsSection projects={projects} />
-        <CareerSection career={career} />
-      </main>
+        <main>
+          <AboutSection profileColumns={profileColumns} />
+          <SkillsSection skillCategories={skillCategories} />
+          <ProjectsSection projects={projects} />
+          <CareerSection career={career} />
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+
+      <button
+        className={`scroll-top-btn${isTop ? ' is-hidden' : ''}`}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        aria-label="맨 위로 이동"
+      >
+        ↑
+      </button>
+    </>
   );
 }
 

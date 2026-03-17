@@ -103,6 +103,14 @@
   background: #f8fafc;
   color: #0f172a;
   min-height: 100vh;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.app--loaded {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .container {
@@ -118,28 +126,32 @@
   text-align: center;
 }
 
-.hero-eyebrow {
-  font-size: 0.9rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  margin: 0;
-  opacity: 0.7;
-}
-
 .hero-title {
-  font-size: clamp(2.4rem, 4vw, 3.5rem);
-  margin: 18px auto 16px;
-  line-height: 1.25;
-  max-width: 720px;
-  font-weight: 700;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  margin: 0 0 16px;
+  line-height: 1.2;
+  font-weight: 900;
 }
 
 .hero-subtitle {
-  font-size: clamp(1.05rem, 2.4vw, 1.3rem);
-  margin: 0 auto 36px;
+  font-size: clamp(1.1rem, 2.8vw, 2rem);
+  margin: 0 0 20px;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.hero-tags {
+  font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+  margin: 0 0 28px;
+  color: rgba(248, 250, 252, 0.55);
+  letter-spacing: 0.1em;
+}
+
+.hero-description {
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  margin: 0;
+  color: rgba(248, 250, 252, 0.75);
   line-height: 1.7;
-  max-width: 680px;
-  color: rgba(248, 250, 252, 0.85);
 }
 
 .hero-actions {
@@ -188,6 +200,17 @@ main {
 
 .section {
   padding: 0;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .section .container {
@@ -591,6 +614,42 @@ main {
   color: #475569;
   line-height: 1.7;
   font-size: 1.05rem;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 8px 24px -8px rgba(15, 23, 42, 0.5);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  z-index: 999;
+}
+
+.scroll-top-btn.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scroll-top-btn:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 480px) {
+  .scroll-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
 }
 
 .footer {

@@ -1,16 +1,19 @@
 import { SectionHeading, Icon } from '../common';
+import useFadeIn from '../../hooks/useFadeIn';
 
 /**
  * AboutSection 컴포넌트
  * 프로필 정보를 표시하는 About Me 섹션
- * 
+ *
  * @param {Object} props
  * @param {Array} props.profileColumns - 프로필 정보 컬럼 배열
  * @returns {JSX.Element}
  */
 const AboutSection = ({ profileColumns }) => {
+  const { ref, isVisible } = useFadeIn();
+
   return (
-    <section className="section about-section" id="about">
+    <section ref={ref} className={`section about-section fade-in${isVisible ? ' is-visible' : ''}`} id="about">
       <div className="container">
         <SectionHeading title="ABOUT ME" variant="about" />
         <div className="profile-grid">
