@@ -62,98 +62,91 @@
   "skillCategories": [
     {
       "category": "Language",
-      "icon": "code",
       "tags": [
         {
           "label": "Dart",
-          "tone": "teal"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"
         },
         {
           "label": "Java",
-          "tone": "crimson"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
         },
         {
           "label": "Swift",
-          "tone": "tangerine"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
         },
         {
           "label": "JavaScript",
-          "tone": "amber"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
         }
       ]
     },
     {
       "category": "Frontend",
-      "icon": "browser",
       "tags": [
         {
           "label": "Flutter",
-          "tone": "sky"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
         },
         {
           "label": "Android",
-          "tone": "leaf"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
         },
         {
           "label": "iOS",
-          "tone": "tangerine"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
         },
         {
           "label": "React",
-          "tone": "ink"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
         }
       ]
     },
     {
       "category": "Backend",
-      "icon": "database",
       "tags": [
         {
           "label": "AWS",
-          "tone": "tangerine"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
         },
         {
           "label": "Firebase",
-          "tone": "sunset"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg"
         },
         {
           "label": "MySQL",
-          "tone": "indigo"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
         },
         {
           "label": "PHP",
-          "tone": "plum"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
         }
       ]
     },
     {
       "category": "Tools",
-      "icon": "cloud",
       "tags": [
         {
           "label": "Notion",
-          "tone": "cobalt"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg"
         },
         {
           "label": "Figma",
-          "tone": "ink"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
         },
         {
           "label": "Github",
-          "tone": "indigo"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
         },
         {
           "label": "Slack",
-          "tone": "brick"
-        },
-        {
-          "label": "Cursor",
-          "tone": "sky"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg"
         },
         {
           "label": "Codex",
-          "tone": "leaf"
-        }
+          "icon": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg"
+        },
+        { "label": "Claude", "icon": "https://cdn.simpleicons.org/claude" }
       ]
     }
   ],
@@ -161,7 +154,7 @@
     {
       "name": "일과사람",
       "period": "2023.11 - 현재 · 넷스프린트",
-      "summary": "건설현장과 자영업자를 위한 현장 모니터링·지출·장비·근태를 통합 제공하는 모바일 애플리케이션",
+      "summary": "건설현장과 자영업자를 위한 현장 모니터링·지출·장비·근태를 통합 제공하는 관리자와 근로자를 위한 모바일 앱",
       "bullets": [
         "iOS/Android 앱스토어 배포 및 운영 전반 관리",
         "Flutter 3.x + GetX 기반 유지보수와 주요 기능 고도화",
@@ -177,19 +170,22 @@
     },
     {
       "name": "아이겟",
+      "discontinued": true,
       "period": "2023.06 - 2023.10 · 엔터크라우드",
       "summary": "뮤지컬 공동구매와 커뮤니티 기능을 제공하는 모바일 앱",
       "bullets": [
         "Flutter 기반 프론트엔드 전면 개발과 앱스토어 배포·운영",
         "경매·비지정석·예매 흐름 및 결제 연동 구현",
-        "전반적인 오류 대응과 성능 최적화로 사용성 개선"
+        "전반적인 오류 대응과 성능 최적화로 사용성 개선",
+        "토스페이 연동 및 결제 구현"
       ],
       "url": "https://www.notion.so/e876a1b0ea6c48f0a1b0ebf0a157041d?pvs=21",
-      "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, AWS, Docker, Kubernetes",
+      "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, AWS, Docker, Kubernetes, Jenkins",
       "linkLabel": "링크"
     },
     {
       "name": "우아닥터",
+      "discontinued": true,
       "period": "2022.08 - 2023.04 · 밍글링",
       "summary": "병원과 보호자를 연결하는 실시간 상담·모니터링 앱",
       "bullets": [
@@ -203,6 +199,7 @@
     },
     {
       "name": "데카펫",
+      "discontinued": true,
       "period": "2022.09 - 2023.03 · 밍글링",
       "summary": "채혈 결과 조회와 병원 찾기, 커뮤니티 기능을 제공하는 펫 헬스케어 앱",
       "bullets": [
@@ -216,6 +213,7 @@
     },
     {
       "name": "키고",
+      "discontinued": true,
       "period": "2022.05 - 2022.08 · 소금",
       "summary": "광고업체와 고객을 매칭하고 실시간 상담이 가능한 하이브리드 앱",
       "bullets": [

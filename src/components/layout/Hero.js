@@ -12,7 +12,8 @@ const Hero = () => {
         <p className="hero-subtitle">Mobile App Developer</p>
         <p className="hero-tags">Flutter · iOS · Android</p>
         <p className="hero-description">
-          최신 기술을 빠르게 흡수해 사용자 경험과 가치를 동시에 끌어올리는데 집중하고 있습니다.
+          최신 기술을 빠르게 흡수해 사용자 경험과 가치를 동시에 끌어올리는데
+          집중하고 있습니다.
         </p>
       </div>
     </header>

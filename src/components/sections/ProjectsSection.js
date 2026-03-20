@@ -18,10 +18,13 @@ const ProjectsSection = ({ projects }) => {
         <SectionBanner title="PROJECTS" variant="projects" />
         <p className="section-lead">지금까지 개발한 대표 프로젝트들을 선별했습니다.</p>
         <div className="projects-grid">
-          {projects.map((project) => (
-            <article className="project-card" key={project.name}>
+          {[...projects].sort((a, b) => (a.discontinued ? 1 : 0) - (b.discontinued ? 1 : 0)).map((project) => (
+            <article className={`project-card${project.discontinued ? ' is-discontinued' : ''}`} key={project.name}>
               <div className="project-header">
-                <h3>{project.name}</h3>
+                <h3>
+                  {project.name}
+                  {project.discontinued && <span className="project-badge-discontinued">서비스 종료</span>}
+                </h3>
                 <p className="project-period">{project.period}</p>
               </div>
               <p className="project-summary">{project.summary}</p>

@@ -21,6 +21,16 @@ const { navLinks, profileColumns, skillCategories, projects, career } = data;
 function App() {
   const [isTop, setIsTop] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    const saved = localStorage.getItem('theme');
+    return saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
+
+  // 다크모드 적용
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  }, [isDark]);
 
   // 페이지 로딩 애니메이션
   useEffect(() => {
@@ -50,7 +60,7 @@ function App() {
   return (
     <>
       <div className={`app${isLoaded ? ' app--loaded' : ''}`} id="top">
-        <Header isTop={isTop} navLinks={navLinks} onNavigate={handleNavigate} />
+        <Header isTop={isTop} navLinks={navLinks} onNavigate={handleNavigate} isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />
         <Hero />
 
         <main>

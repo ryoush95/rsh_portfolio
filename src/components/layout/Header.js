@@ -6,9 +6,11 @@
  * @param {boolean} props.isTop - 스크롤이 최상단에 있는지 여부
  * @param {Array} props.navLinks - 네비게이션 링크 목록
  * @param {Function} props.onNavigate - 네비게이션 클릭 핸들러
+ * @param {boolean} props.isDark - 다크모드 여부
+ * @param {Function} props.onToggleDark - 다크모드 토글 핸들러
  * @returns {JSX.Element}
  */
-const Header = ({ isTop, navLinks, onNavigate }) => {
+const Header = ({ isTop, navLinks, onNavigate, isDark, onToggleDark }) => {
   return (
     <header className={`site-header ${isTop ? 'is-top' : 'is-solid'}`}>
       <div className="site-header-inner">
@@ -18,6 +20,16 @@ const Header = ({ isTop, navLinks, onNavigate }) => {
           onClick={() => onNavigate('#top')}
         >
           유승훈'S PORTFOLIO
+        </button>
+        <button
+          type="button"
+          className={`theme-switch${isDark ? ' is-dark' : ''}`}
+          onClick={onToggleDark}
+          aria-label={isDark ? '라이트 모드로 전환' : '다크 모드로 전환'}
+        >
+          <span className="theme-switch-icon theme-switch-sun">☀︎</span>
+          <span className="theme-switch-icon theme-switch-moon">☾</span>
+          <span className="theme-switch-knob" />
         </button>
         <nav className="site-nav">
           {navLinks.map((link) =>
