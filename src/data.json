@@ -146,14 +146,17 @@
           "label": "Codex",
           "icon": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg"
         },
-        { "label": "Claude", "icon": "https://cdn.simpleicons.org/claude" }
+        {
+          "label": "Claude",
+          "icon": "https://cdn.simpleicons.org/claude"
+        }
       ]
     }
   ],
   "projects": [
     {
       "name": "일과사람",
-      "period": "2023.11 - 현재 · 넷스프린트",
+      "period": "2023.11 - 2026.05 · 넷스프린트",
       "summary": "건설현장과 자영업자를 위한 현장 모니터링·지출·장비·근태를 통합 제공하는 관리자와 근로자를 위한 모바일 앱",
       "bullets": [
         "iOS/Android 앱스토어 배포 및 운영 전반 관리",
@@ -166,6 +169,21 @@
       ],
       "url": "https://windy-apricot-5b1.notion.site/dd635c24f1774129a31766d8833611b3",
       "stack": "Flutter 3.x, GetX, Firebase Analytics, Firebase Push Notification, Sentry, MySQL, AWS, NestJS",
+      "linkLabel": "링크"
+    },
+    {
+      "name": "디씨와우",
+      "period": "2023.11 - 2026.05 · 넷스프린트",
+      "summary": "커뮤니티 및 광고를 위한 모바일 앱",
+      "bullets": [
+        "iOS/Android 앱스토어 배포 및 운영 전반 관리",
+        "Flutter 3.x + GetX 기반 유지보수와 주요 기능 고도화",
+        "커뮤니티 기능 개발 및 운영",
+        "네이버 지도를 이용한 위치기반 서비스 개발 및 운영",
+        "구글 애즈 광고 연동 및 운영"
+      ],
+      "url": "https://windy-apricot-5b1.notion.site/3341a80b068d80f18c33dbd41443d559",
+      "stack": "Flutter 3.x, GetX, Google Ads, Firebase Push Notification, MySQL, AWS, NestJS",
       "linkLabel": "링크"
     },
     {
@@ -255,7 +273,7 @@
   "career": [
     {
       "company": "넷스프린트",
-      "period": "2025.09 - 현재",
+      "period": "2023.11 - 2026.05",
       "tagline": "일과사람 앱 개발 및 운영",
       "details": [
         "Flutter 프론트엔드 개발 및 앱스토어 배포 관리",
@@ -275,7 +293,9 @@
         "Flutter 프론트엔드 개발 및 앱스토어 배포 관리",
         "경매·예매 기능, 결제 연동, 성능 개선 주도"
       ],
-      "highlights": ["앱 전반 오류 해결과 속도 개선으로 사용자 만족도 향상"]
+      "highlights": [
+        "앱 전반 오류 해결과 속도 개선으로 사용자 만족도 향상"
+      ]
     },
     {
       "company": "밍글링",
@@ -307,5 +327,7 @@
   "philosophy": [
     "사용자가 즉시 체감할 수 있는 모바일 경험을 빠르게 전달합니다."
   ],
-  "idealTeam": ["모바일 제품 임팩트에 집중하며 빠르게 실험하는 팀"]
+  "idealTeam": [
+    "모바일 제품 임팩트에 집중하며 빠르게 실험하는 팀"
+  ]
 }
