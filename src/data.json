@@ -37,8 +37,8 @@
     [
       {
         "icon": "calendar",
-        "label": "생년월일",
-        "value": "1995.09.20"
+        "label": "경력",
+        "value": "약 4년"
       },
       {
         "icon": "mail",
@@ -234,7 +234,7 @@
           ]
         }
       ],
-      "url": "https://www.notion.so/e876a1b0ea6c48f0a1b0ebf0a157041d?pvs=21",
+      "url": "https://windy-apricot-5b1.notion.site/e876a1b0ea6c48f0a1b0ebf0a157041d?source=copy_link",
       "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, AWS, Docker, Kubernetes, Jenkins",
       "linkLabel": "링크"
     },
@@ -264,7 +264,7 @@
           ]
         }
       ],
-      "url": "https://www.notion.so/844516ec9c1c4cc0a6aac1631cb99a0b?pvs=21",
+      "url": "https://windy-apricot-5b1.notion.site/844516ec9c1c4cc0a6aac1631cb99a0b?source=copy_link",
       "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, PHP",
       "linkLabel": "링크"
     },
@@ -278,7 +278,7 @@
         "전화번호 인증 도입으로 중복 가입 방지",
         "채혈 기기 데이터와 실시간 연동"
       ],
-      "url": "https://www.notion.so/e876a1b0ea6c48f0a1b0ebf0a157041d?pvs=21",
+      "url": "https://windy-apricot-5b1.notion.site/fba8dffbb38d4474bb57b8a24aa87b2c?source=copy_link",
       "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, PHP",
       "linkLabel": "링크"
     },
@@ -318,7 +318,7 @@
           ]
         }
       ],
-      "url": "https://www.notion.so/ba6ca924c9464c1e8b146847837f6893?pvs=21",
+      "url": "https://windy-apricot-5b1.notion.site/ba6ca924c9464c1e8b146847837f6893?source=copy_link",
       "stack": "Flutter, Firebase Push Notification, PHP, MySQL",
       "linkLabel": "링크"
     },
