@@ -28,11 +28,24 @@ const ProjectsSection = ({ projects }) => {
                 <p className="project-period">{project.period}</p>
               </div>
               <p className="project-summary">{project.summary}</p>
-              <ul>
-                {project.bullets.map((bullet) => (
-                  <li key={bullet}>{bullet}</li>
-                ))}
-              </ul>
+              {project.bulletGroups ? (
+                project.bulletGroups.map((group) => (
+                  <div className="project-group" key={group.title}>
+                    <h4>{group.title}</h4>
+                    <ul>
+                      {group.items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))
+              ) : (
+                <ul>
+                  {project.bullets.map((bullet) => (
+                    <li key={bullet}>{bullet}</li>
+                  ))}
+                </ul>
+              )}
               {project.url ? (
                 <a 
                   className="project-link" 

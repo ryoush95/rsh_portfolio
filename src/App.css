@@ -701,6 +701,12 @@ main {
   line-height: 1.6;
 }
 
+.project-group h4 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: var(--text-strong);
+}
+
 .project-link {
   color: #3b82f6;
   word-break: break-all;

@@ -107,7 +107,7 @@
       "tags": [
         {
           "label": "AWS",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain.svg"
         },
         {
           "label": "Firebase",
@@ -158,14 +158,27 @@
       "name": "일과사람",
       "period": "2023.11 - 2026.05 · 넷스프린트",
       "summary": "건설현장과 자영업자를 위한 현장 모니터링·지출·장비·근태를 통합 제공하는 관리자와 근로자를 위한 모바일 앱",
-      "bullets": [
-        "iOS/Android 앱스토어 배포 및 운영 전반 관리",
-        "Flutter 3.x + GetX 기반 유지보수와 주요 기능 고도화",
-        "근태·계약·회원 관리 업무를 모바일 환경으로 이전하여 관리자와 근로자의 부담 최소화",
-        "안면인식 기반 출퇴근 기능을 AWS 서비스로 구현하여 현장 근로자 관리 효율 향상",
-        "주민등록증·운전면허증 OCR 자동화를 통해 사용자 인증 절차 단축",
-        "부트페이 결제 및 세금영수증 발행을 연동해 비용 처리 간소화",
-        "구인·구직 서비스를 도입해 플랫폼 커뮤니티 확장"
+      "bulletGroups": [
+        {
+          "title": "담당업무",
+          "items": [
+            "iOS/Android 앱스토어 배포 및 운영 관리",
+            "Flutter/GetX 기반 앱 유지보수 및 신규 기능 고도화",
+            "Google Analytics 연결 및 관리",
+            "React 관리자 페이지 유지보수",
+            "GitHub Actions로 CI/CD 관리",
+            "근태·계약·회원관리 전반을 모바일화하여 관리자 및 근로자의 업무 부담 최소화"
+          ]
+        },
+        {
+          "title": "성과",
+          "items": [
+            "Amazon Rekognition 안면인식 출퇴근 기능 개발",
+            "Naver OCR 신분증 인증 기능 개발, 입력 시간 10초로 단축",
+            "부트페이 정기 결제·세금영수증 연동으로 비용 처리 간소화",
+            "구인·구직 서비스 개발로 플랫폼 확장"
+          ]
+        }
       ],
       "url": "https://windy-apricot-5b1.notion.site/dd635c24f1774129a31766d8833611b3",
       "stack": "Flutter 3.x, GetX, Firebase Analytics, Firebase Push Notification, Sentry, MySQL, AWS, NestJS",
@@ -175,12 +188,23 @@
       "name": "디씨와우",
       "period": "2023.11 - 2026.05 · 넷스프린트",
       "summary": "커뮤니티 및 광고를 위한 모바일 앱",
-      "bullets": [
-        "iOS/Android 앱스토어 배포 및 운영 전반 관리",
-        "Flutter 3.x + GetX 기반 유지보수와 주요 기능 고도화",
-        "커뮤니티 기능 개발 및 운영",
-        "네이버 지도를 이용한 위치기반 서비스 개발 및 운영",
-        "구글 애즈 광고 연동 및 운영"
+      "bulletGroups": [
+        {
+          "title": "담당업무",
+          "items": [
+            "iOS/Android 앱스토어 배포 및 운영 전반 관리",
+            "Flutter 3.x + GetX 기반 유지보수와 주요 기능 고도화",
+            "커뮤니티 기능 개발 및 운영"
+          ]
+        },
+        {
+          "title": "성과",
+          "items": [
+            "네이버 지도를 이용한 위치기반 서비스 개발 및 운영",
+            "구글 애즈 광고 연동 및 운영",
+            "Flutter 및 iOS/Android 버전 업그레이드 대응으로 앱 안정성 유지"
+          ]
+        }
       ],
       "url": "https://windy-apricot-5b1.notion.site/3341a80b068d80f18c33dbd41443d559",
       "stack": "Flutter 3.x, GetX, Google Ads, Firebase Push Notification, MySQL, AWS, NestJS",
@@ -191,11 +215,24 @@
       "discontinued": true,
       "period": "2023.06 - 2023.10 · 엔터크라우드",
       "summary": "뮤지컬 공동구매와 커뮤니티 기능을 제공하는 모바일 앱",
-      "bullets": [
-        "Flutter 기반 프론트엔드 전면 개발과 앱스토어 배포·운영",
-        "경매·비지정석·예매 흐름 및 결제 연동 구현",
-        "전반적인 오류 대응과 성능 최적화로 사용성 개선",
-        "토스페이 연동 및 결제 구현"
+      "bulletGroups": [
+        {
+          "title": "담당업무",
+          "items": [
+            "아이겟 애플리케이션 프론트엔드 개발",
+            "앱스토어에 완성된 앱 배포 및 관리"
+          ]
+        },
+        {
+          "title": "성과",
+          "items": [
+            "경매, 비지정석, 예매 기능 개발",
+            "유료 포인트 및 무료 포인트 기능 개발",
+            "토스 결제연동",
+            "커뮤니티 서비스 개발",
+            "앱의 전체적인 오류 및 속도개선"
+          ]
+        }
       ],
       "url": "https://www.notion.so/e876a1b0ea6c48f0a1b0ebf0a157041d?pvs=21",
       "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, AWS, Docker, Kubernetes, Jenkins",
@@ -206,10 +243,26 @@
       "discontinued": true,
       "period": "2022.08 - 2023.04 · 밍글링",
       "summary": "병원과 보호자를 연결하는 실시간 상담·모니터링 앱",
-      "bullets": [
-        "앱 리뉴얼과 주요 기능 개선, 스토어 배포 담당",
-        "Flutter UI/UX 재설계로 사용자 경험 개선 및 크래시율 97% 감소",
-        "서포터즈 피드백 기반 오류 모니터링과 지속적인 패치"
+      "bulletGroups": [
+        {
+          "title": "담당업무",
+          "items": [
+            "기존 앱 리뉴얼 및 UX/UI 개선",
+            "PHP 기반 API 작성 및 DB 연동",
+            "iOS/Android 앱스토어 배포 및 운영"
+          ]
+        },
+        {
+          "title": "성과",
+          "items": [
+            "의사들이나 다른 부모들간의 커뮤니티 개발 → 활성 사용자 상향",
+            "다양한 영양제, 체조동영상 판매 → 매출원 확보",
+            "다양한 심리검사나 자폐아 테스트 기능 개발 → 활성 사용자 상향",
+            "크래시율 97%까지 감소 → 안정성 상향",
+            "앱리뉴얼로 디자인 및 사용자 경험 개선",
+            "서포터즈들과 지속적으로 소통하며 지속적으로 오류수정"
+          ]
+        }
       ],
       "url": "https://www.notion.so/844516ec9c1c4cc0a6aac1631cb99a0b?pvs=21",
       "stack": "Flutter, Firebase Analytics, Push Notification, MySQL, PHP",
@@ -247,26 +300,51 @@
       "name": "복대리",
       "period": "2022.02 - 2022.06 · 소금",
       "summary": "변호사와 고객을 연결하고 재판 현황을 공유하는 앱",
-      "bullets": [
-        "Flutter 프론트엔드 개발과 Firebase 알림 구축",
-        "푸시 알림 다중 발송 실패 문제 해결, 도착 시간 50% 단축",
-        "카테고리별 푸시 구독 서비스 구현"
+      "bulletGroups": [
+        {
+          "title": "담당업무",
+          "items": [
+            "Flutter 프론트엔드 개발",
+            "변호사·고객 연결 및 재판 현황 공유 기능 개발",
+            "Firebase 푸시 알림 구축",
+            "PHP API 개발"
+          ]
+        },
+        {
+          "title": "성과",
+          "items": [
+            "푸시 알림 다중 발송 실패 문제 해결 → 도착 시간 50% 단축",
+            "카테고리별 푸시 구독 서비스 구현 → 고객 반복 이용률 향상"
+          ]
+        }
       ],
       "url": "https://www.notion.so/ba6ca924c9464c1e8b146847837f6893?pvs=21",
-      "stack": "Flutter, Firebase Push Notification, MySQL",
+      "stack": "Flutter, Firebase Push Notification, PHP, MySQL",
       "linkLabel": "링크"
     },
     {
       "name": "치매북스",
-      "period": "2022.01 - 2023.02 · 소금",
+      "period": "2021.08 - 2022.08 · 소금",
       "summary": "치매 예방 콘텐츠를 제공하는 공공 하이브리드 앱",
-      "bullets": [
-        "Flutter 기반 하이브리드 앱 개발 및 배포",
-        "웹 뷰어와의 레이아웃 차이로 발생한 호환성 이슈 해결",
-        "치매 관련 자료 열람 경험 최적화"
+      "bulletGroups": [
+        {
+          "title": "담당업무",
+          "items": [
+            "Flutter 기반 하이브리드 앱 개발 및 배포",
+            "앱 유지보수 및 Firebase 푸시 알림 연동",
+            "PHP API 개발"
+          ]
+        },
+        {
+          "title": "성과",
+          "items": [
+            "웹 뷰어와의 레이아웃 차이로 발생한 호환성 이슈 해결",
+            "치매 관련 자료 열람 경험 최적화"
+          ]
+        }
       ],
       "url": "https://www.notion.so/cc8a49e7e2854683a1eaf9294ae9bf47?pvs=21",
-      "stack": "Flutter, Firebase Push Notification, MySQL",
+      "stack": "Flutter, Firebase Push Notification, PHP, MySQL",
       "linkLabel": "링크"
     }
   ],
@@ -312,11 +390,12 @@
     },
     {
       "company": "소금",
-      "period": "2022.01 - 2023.08",
+      "period": "2021.08 - 2022.08",
       "tagline": "광고·법률·공공 서비스 하이브리드 앱 다수 개발",
       "details": [
         "Flutter 하이브리드 앱 신규 개발 및 유지보수",
-        "Firebase Push 기반 실시간 알림 설계"
+        "Firebase Push 기반 실시간 알림 설계",
+        "PHP API 개발"
       ],
       "highlights": [
         "키고, 복대리, 치매북스 등 다양한 도메인 앱 개발",
