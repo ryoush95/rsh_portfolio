@@ -23,8 +23,8 @@ const Hero = ({ onNavigate, githubUrl }) => {
         <div className="hero-copy">
           <p className="hero-eyebrow">Mobile App Developer</p>
           <h1 className="hero-title">
-            기획부터 출시·운영까지,
-            <span className="hero-title-accent">앱의 흐름을 개발합니다.</span>
+            개발부터 배포·운영까지,
+            <span className="hero-title-accent">서비스의 완성도를 높입니다.</span>
           </h1>
           <p className="hero-description">
             Flutter를 기반으로 iOS/Android 앱 신규 개발, 앱스토어 배포와
