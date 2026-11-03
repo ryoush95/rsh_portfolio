@@ -7,8 +7,8 @@ import { Header, Hero, Footer } from './components/layout';
 import {
   AboutSection,
   SkillsSection,
-  ProjectsSection,
   CareerSection,
+  ProjectsSection,
 } from './components/sections';
 
 // 데이터 구조 분해
@@ -61,13 +61,13 @@ function App() {
     <>
       <div className={`app${isLoaded ? ' app--loaded' : ''}`} id="top">
         <Header isTop={isTop} navLinks={navLinks} onNavigate={handleNavigate} isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />
-        <Hero />
+        <Hero onNavigate={handleNavigate} githubUrl={navLinks.find((link) => link.label === 'GitHub')?.href} />
 
         <main>
           <AboutSection profileColumns={profileColumns} />
           <SkillsSection skillCategories={skillCategories} />
-          <ProjectsSection projects={projects} />
           <CareerSection career={career} />
+          <ProjectsSection projects={projects} />
         </main>
 
         <Footer />

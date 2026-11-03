@@ -9,12 +9,12 @@
       "target": "#skills"
     },
     {
-      "label": "Projects",
-      "target": "#projects"
-    },
-    {
       "label": "Career",
       "target": "#career"
+    },
+    {
+      "label": "Projects",
+      "target": "#projects"
     },
     {
       "label": "GitHub",
@@ -72,10 +72,6 @@
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
         },
         {
-          "label": "Swift",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
-        },
-        {
           "label": "JavaScript",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
         }
@@ -114,12 +110,21 @@
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg"
         },
         {
+          "label": "PHP",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+        }
+      ]
+    },
+    {
+      "category": "Database",
+      "tags": [
+        {
           "label": "MySQL",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
         },
         {
-          "label": "PHP",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+          "label": "MariaDB",
+          "icon": "https://cdn.simpleicons.org/mariadb/c0765a"
         }
       ]
     },
@@ -175,7 +180,7 @@
           "items": [
             "Amazon Rekognition 안면인식 출퇴근 기능 개발",
             "Naver OCR 신분증 인증 기능 개발, 입력 시간 10초로 단축",
-            "부트페이 정기 결제·세금영수증 연동으로 비용 처리 간소화",
+            "부트페이 정기 결제, 세금영수증 연동으로 비용 처리 간소화",
             "구인·구직 서비스 개발로 플랫폼 확장"
           ]
         }
@@ -187,7 +192,7 @@
     {
       "name": "디씨와우",
       "period": "2023.11 - 2026.05 · 넷스프린트",
-      "summary": "커뮤니티 및 광고를 위한 모바일 앱",
+      "summary": "다양한 종류의 할인, 앱테크, 커뮤니티 및 광고를 위한 모바일 앱",
       "bulletGroups": [
         {
           "title": "담당업무",
@@ -299,7 +304,7 @@
     {
       "name": "복대리",
       "period": "2022.02 - 2022.06 · 소금",
-      "summary": "변호사와 고객을 연결하고 재판 현황을 공유하는 앱",
+      "summary": "변호사와 고객을 연결하고 재판 현황을 공유하는 하이브리드 앱",
       "bulletGroups": [
         {
           "title": "담당업무",
@@ -307,7 +312,7 @@
             "Flutter 프론트엔드 개발",
             "변호사·고객 연결 및 재판 현황 공유 기능 개발",
             "Firebase 푸시 알림 구축",
-            "PHP API 개발"
+            "PHP API 작성"
           ]
         },
         {
@@ -332,7 +337,7 @@
           "items": [
             "Flutter 기반 하이브리드 앱 개발 및 배포",
             "앱 유지보수 및 Firebase 푸시 알림 연동",
-            "PHP API 개발"
+            "PHP API 작성"
           ]
         },
         {
@@ -352,54 +357,37 @@
     {
       "company": "넷스프린트",
       "period": "2023.11 - 2026.05",
-      "tagline": "일과사람 앱 개발 및 운영",
-      "details": [
-        "Flutter 프론트엔드 개발 및 앱스토어 배포 관리",
-        "데이터 베이스"
-      ],
-      "highlights": [
-        "얼굴인증 출퇴근 기능 AWS 서비스 구현",
-        "주민등록증·운전면허증 OCR 자동화를 통해 사용자 인증 절차 단축",
-        "부트페이 결제 및 세금영수증 발행을 연동해 비용 처리 간소화"
+      "role": "Flutter 앱 개발 및 운영\nReact 관리자 페이지 개발 및 유지보수",
+      "projects": [
+        "일과사람",
+        "디씨와우"
       ]
     },
     {
       "company": "엔터크라우드",
       "period": "2023.06 - 2023.10",
-      "tagline": "뮤지컬 공동구매 앱 아이겟을 개발 및 운영",
-      "details": [
-        "Flutter 프론트엔드 개발 및 앱스토어 배포 관리",
-        "경매·예매 기능, 결제 연동, 성능 개선 주도"
-      ],
-      "highlights": [
-        "앱 전반 오류 해결과 속도 개선으로 사용자 만족도 향상"
+      "role": "Flutter 앱 개발",
+      "projects": [
+        "아이겟"
       ]
     },
     {
       "company": "밍글링",
       "period": "2022.08 - 2023.04",
-      "tagline": "우아닥터·데카펫 등 의료·펫케어 앱 리뉴얼",
-      "details": [
-        "Flutter 앱 리뉴얼 및 신규 기능 개발",
-        "PHP로 간단한 API 개발 및 배포"
-      ],
-      "highlights": [
-        "우아닥터 리뉴얼로 크래시율 97% 감소",
-        "전화번호 인증과 기기 연동을 통한 데이터 신뢰도 확보"
+      "role": "Flutter 앱 리뉴얼, PHP API 작성",
+      "projects": [
+        "우아닥터",
+        "데카펫"
       ]
     },
     {
       "company": "소금",
-      "period": "2021.08 - 2022.08",
-      "tagline": "광고·법률·공공 서비스 하이브리드 앱 다수 개발",
-      "details": [
-        "Flutter 하이브리드 앱 신규 개발 및 유지보수",
-        "Firebase Push 기반 실시간 알림 설계",
-        "PHP API 개발"
-      ],
-      "highlights": [
-        "키고, 복대리, 치매북스 등 다양한 도메인 앱 개발",
-        "푸시 알림 안정화와 구독 기능 구현으로 고객 반복 이용률 향상"
+      "period": "2022.01 - 2022.08",
+      "role": "Flutter 하이브리드 앱 개발",
+      "projects": [
+        "키고",
+        "복대리",
+        "치매북스"
       ]
     }
   ],
